@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <JobDefinition xmlns="http://schemas.ggf.org/jsdl/2005/11/jsdl">
 
-	<JobDescription grisu_modules="GenericMDS">
+	<JobDescription grisu_modules="MatchMakerPanel">
 	
 		<GrisuTemplate xmlns="http://arcs.org.au/jsdl/jsdl-grisu">
 			<Email 	template="Email" 
