@@ -25,7 +25,7 @@
 			<POSIXApplication xmlns="http://schemas.ggf.org/jsdl/2005/11/jsdl-posix">
 
 
-				<Executable description="Please select/enter the name of the executable in the left combobox and your arguments in the right one." name="Command" other="useHistory" template="MDSCommandLine" title="Command to run"/>
+				<Executable description="Please select/enter the command to run" name="Command" other="useHistory" template="CommandLine" title="Command to run"/>
 
 				<!-- <Executable>mb</Executable> -->
 

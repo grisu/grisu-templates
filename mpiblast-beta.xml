@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><JobDefinition xmlns="http://schemas.ggf.org/jsdl/2005/11/jsdl">
+
+	<JobDescription grisu_modules="Common">
+
+		<GrisuTemplate xmlns="http://arcs.org.au/jsdl/jsdl-grisu">
+			<Email description="The email address to send an email to if the job status changes." multiplicity="?" name="EmailAddress" other="useLastValue" template="Email" />
+		</GrisuTemplate>
+
+		<JobIdentification>
+
+			<JobName defaultValue="blast_job" description="The name of the job." name="Jobname" other="autosuggest,nosuggestbutton" template="JobName"/>
+
+		</JobIdentification>
+
+		<Application>
+			<ApplicationName>generic</ApplicationName>
+                        <Description>
+                             BLAST implements search and align heuristics for aligning DNA and protein sequnces.
+                        </Description>
+			<POSIXApplication xmlns="http://schemas.ggf.org/jsdl/2005/11/jsdl-posix">
+				<Executable>mpiblast</Executable>
+				<Argument>-i</Argument>
+				<Argument substitute="FASTA_INPUT[basename]" />
+				<Argument>-p</Argument>
+				<Argument template="InputString" name="BLAST_program" title="BLAST program"
+					defaultValue="blastn" other="render=combobox" multiplicity="1"
+					prefills="blastp,blastx,tblastn,tblastx" />
+				<Argument>-d</Argument>
+				<Argument template="InputString" name="Blast_database" title="Blast database"
+					defaultValue="nt" other="render=combobox" multiplicity="1"
+					prefills="nt,nr" />  <!-- MDS or other dynamic update for target host dbs-->
+				<Argument>-e</Argument>
+				<Argument template="InputString" name="Expectation_Cutoff" title="Expectation Cutoff"
+					defaultValue="10" other="render=combobox" prefills="0.0001,0.001,0.01,0.1,1.0,10" />
+				<Argument>-F</Argument>
+				<Argument template="InputString" name="Filter"
+					defaultValue="T" other="render=combobox" prefills="F" />
+				<Argument>-M</Argument>
+				<Argument template="InputString" name="Score_Matrix" title="Score Matrix"
+					defaultValue="BLOSUM62" prefills="BLOSUM45,BLOSUM80,PAM30,PAM70"
+					other="render=combobox" />
+				<Argument>-w</Argument>
+					<Argument template="InputString" name="Frame_shift_penalty_1" title="Frame shift penalty"
+						substitute="prefix:(-w)" other="render=combobox" defaultValue="0"
+						prefills="6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,25,50,100" />
+					<Argument template="MultipleInputString" name="Other_parameters" title="Other parameters"
+						other="render=combobox" defaultValue="" multiplicity="?" />
+
+					<WorkingDirectory filesystemName="userExecutionHostFs" postprocess="FillWithJobDirectoryRelativeToExecutionFileSystem"/>
+					<Output>stdout.txt</Output>
+					<Error>stderr.txt</Error>
+                                        <Module description="The module to load" multiplicity="?" defaultValue="mpiblast" name="Module" template="InputString"/>
+			</POSIXApplication>
+
+			<TotalCPUTime defaultValue="3600" description="The total cpu time in seconds." multiplicity="1" name="Walltime" postprocess="TimesNoCPUs" template="InputInteger"/>
+
+ <TotalCPUCount>
+    <exact defaultValue="16" description="How many CPUs do you want to use to run this job." multiplicity="1" name="CPUs" prefills="1,2,4,8,16,32,64" template="InputInteger"/>
+ </TotalCPUCount>
+
+		</Application>
+		<Resources>
+			<CandidateHosts>
+                         <HostName description="Where do you want to submit the job to?" multiplicity="1" name="HostName" other="hideAllQueuesCheckbox,allQueues" template="InputString"/>
+			</CandidateHosts>
+
+			<FileSystem name="userExecutionHostFs">
+				<MountSource multiplicity="1" name="ExecutionFileSystem" template="InputString"/>
+				<FileSystemType>normal</FileSystemType>
+			</FileSystem>
+		</Resources>
+		<!--  The following DataStaging element -->
+		<DataStaging>
+			<FileName/>
+			<FileSystemName>userExecutionHostFs</FileSystemName>
+			<Source>
+				<URI multiplicity="1" name="FastaFile"
+					other="render=combobox,useHistory=6,directoryKey=BLAST"
+					postprocess="FillDataStagingFileNameElement,Substitute[name=FASTA_INPUT]"
+					template="InputFile" title="Input FASTA file" validator="InputFile" />
+			</Source>
+		</DataStaging>
+	</JobDescription>
+</JobDefinition>
