@@ -36,8 +36,6 @@
 				<Error>stderr.txt</Error>
 				<!-- 	loads the module needed for a Octave job -->
 
-				<Email description="The email address to send an email to if the job status changes." multiplicity="?" name="EmailAddress" other="useLastValue" template="Email"/>
-
 			</POSIXApplication>
 
 
@@ -57,16 +55,11 @@
 
 			</CandidateHosts>
 
-			<FileSystem name="userExecutionHostFs">
-				<MountSource multiplicity="1" name="ExecutionFileSystem" template="InputString"/>
-
-				<FileSystemType>normal</FileSystemType>
-			</FileSystem>
 		</Resources>
 
 		<DataStaging>
 			<FileName/>
-			<FileSystemName>userExecutionHostFs</FileSystemName>
+			<FileSystemName></FileSystemName>
 			<Source>
 
 				<URI description="Please provide your Octave script here." multiplicity="1" name="A_OctaveInputFile" other="render=combobox,useHistory=6,directoryKey=Octave" postprocess="FillDataStagingFileNameElement,Substitute[name=INPUT_FILE]" template="InputFile" title="Octave script" validator="InputFile"/>
@@ -76,7 +69,7 @@
 
 		<DataStaging>
 			<FileName/>
-			<FileSystemName>userExecutionHostFs</FileSystemName>
+			<FileSystemName></FileSystemName>
 			<Source>
 
 				<URI description="Optional data files required by Octave script" multiplicity="*" name="B_OtherFiles" postprocess="FillDataStagingFileNameElement" template="MultipleInputFiles" title="Other input files" validator="InputFile"/>
