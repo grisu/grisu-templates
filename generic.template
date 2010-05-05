@@ -1,0 +1,45 @@
+commandline = hello world
+
+= Generic = 
+
+------------------------
+
+
+[inputFiles]
+
+type = MultipleInputFiles
+size = 2000x200
+title = Inputfiles
+
+-
+
+[cpus]
+
+type = Cpus
+title = CPUs
+size = 100x70
+defaultValue = 1
+
+[jobtype]
+
+type = JobType
+size = 250x70
+
+-
+
+[walltime]
+
+type = Walltime
+title = Walltime
+defaultAmount = 10
+defaultUnit = days
+size = 200x70
+
+-
+
+[jobname]
+
+type = Jobname
+defaultValue = templatetest
+title = Jobname
+size = 2000x70
