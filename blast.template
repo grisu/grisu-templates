@@ -1,11 +1,14 @@
 commandline = ${commandline}
+application = blast
+applicationVersion = 2.2.21
+
 = Generic = 
 -
 
 [commandline]
 
 type = SimpleCommandline
-title = Commandline
+title = The blast commandline
 size = 2000x70
 
 -
@@ -33,6 +36,6 @@ size = 200x70
 -
 [jobname]
 type = Jobname
-defaultValue = templatetest
+defaultValue = blastjob
 title = Jobname
 size = 2000x70
