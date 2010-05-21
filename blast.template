@@ -1,36 +1,71 @@
-commandline = ${commandline}
+commandline = blastall -p ${program} -i ${inputquery} -d ${db} -e ${expectation_cutoff} -f ${extendt} -o output.txt ${other}
 application = blast
 applicationVersion = 2.2.21
 force_single = true
 hostCount = 1
-
-= Generic = 
+memory = 1024
+walltimeInSeconds = 3600
+= Generic =
+- 
+[Heading]
+type = InfoField
+size = 1000x140
+defaultValue = BLAST -   NCBI Basic Local Alignment Search Tool.  Databases on ARCS sites are preformatted into 42 fragments for compatibility with mpiBLAST.
+[Source]
+type = InfoField
+size = 1000x140
+defaultValue = Source: http://blast.ncbi.nlm.nih.gov/Blast.cgi  -   Defaults:  Single threaded, results stored in myout.txt
 -
-[commandline]
-type = SimpleCommandline
-title = The blast commandline
-size = 2000x70
--
-[inputFiles]
-type = MultipleInputFiles
-size = 2000x200
-title = Inputfiles
--
-[cpus]
-type = Cpus
-title = CPUs
-size = 100x70
-defaultValue = 1
-
-[walltime]
-type = Walltime
-title = Walltime
-defaultAmount = 10
-defaultUnit = days
-size = 200x70
-
 [jobname]
 type = Jobname
 defaultValue = blastjob
 title = Jobname
 size = 2000x70
+-
+[program]
+type = TextCombo
+title = Program
+size = 150x70
+prefills = blastp,blastn,blastx,tblastn,tblastx
+editable = false
+[db]
+type = TextCombo
+title = Database
+size = 150x70
+prefills = nr,nt
+editable = false
+useHistory = false
+[expectation_cutoff]
+type = TextCombo
+title = Cutoff E
+size = 150x70
+prefills = 0.0001,0.001,0.01,0.1,1.0,10
+editable = false
+useHistory = true
+[extendt]
+type = TextCombo
+title = Extend T
+size = 150x70
+prefills = 11
+editable = false
+useHistory = true
+[other]
+type = TextCombo
+title = Other parameters
+size = 2000x70
+editable = true
+useHistory = true
+prefills = -m 6
+-
+[Tips]
+type = InfoField
+size = 2000x70
+defaultValue = Tip: -m 6 will give results that are flat query-anchored, no identities and blunt ends   
+-
+[inputquery]
+type = SingleInputFile
+size = 2000x70
+title = Input FASTA file
+filter = BasenameFilter
+-
+
