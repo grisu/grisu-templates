@@ -60,7 +60,7 @@ prefills = -m 6
 [Tips]
 type = InfoField
 size = 2000x70
-defaultValue = Tip: -m 6 will give results that are flat query-anchored, no identities and blunt ends   
+defaultValue = Tip: -m 6 will give results that are flat query-anchored, no identities and blunt ends.  Requests for additional databases and for installation of newer versions should be made to rt@arcs.org.au   
 -
 [inputquery]
 type = SingleInputFile
