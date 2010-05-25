@@ -1,4 +1,4 @@
-commandline = blastall -p ${program} -i ${inputquery} -d ${db} -e ${expectation_cutoff} -f ${extendt} -o output.txt ${other}
+commandline = blastall -p ${program} -i ${inputquery} -d ${db} -e ${expectation_cutoff} -o output.txt ${other}
 application = blast
 applicationVersion = 2.2.21
 force_single = true
