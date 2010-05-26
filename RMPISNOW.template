@@ -1,0 +1,31 @@
+commandline = RMPISNOW -f ${file}
+application = RMPISNOW
+force_mpi = true
+= Create an RMPISNOW job = 
+-
+[file]
+type = SingleInputFile
+title = R script file
+size = 2000x70
+filter = BasenameFilter
+help = you need to specify an R script file
+- 
+[cpus]
+type = Cpus
+title = CPUs
+size = 100x70
+defaultValue = 1
+
+[walltime]
+type = Walltime
+title = Walltime
+defaultAmount = 1
+defaultUnit = hours
+#useHistory = false
+size = 200x70
+-
+[jobname]
+type = Jobname
+defaultValue = RMPISNOW_job
+title = Jobname
+size = 2000x70
