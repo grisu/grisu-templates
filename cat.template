@@ -23,7 +23,7 @@ filter = BasenameFilter
 type = Walltime
 title = Walltime
 defaultAmount = 10
-defaultUnit = days
+defaultUnit = minutes
 size = 200x70
 
 

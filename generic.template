@@ -28,7 +28,7 @@ size = 2000x70
 type = Walltime
 title = Walltime
 defaultAmount = 10
-defaultUnit = days
+defaultUnit = minutes
 size = 200x70
 -
 [jobname]

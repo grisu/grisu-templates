@@ -23,7 +23,7 @@ defaultValue = 1
 type = Walltime
 title = Walltime
 defaultAmount = 10
-defaultUnit = days
+defaultUnit = hours
 size = 200x70
 -
 [jobname]
