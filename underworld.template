@@ -11,20 +11,23 @@ filter = BasenameFilter
 [file2]
 type = MultipleInputFiles
 title = Additional files
-size = 2000x180
+size = 2000x210
 filter = BasenameFilter
 -
 [cpus]
 type = Cpus
 title = CPUs
-size = 100x70
+size = 100x100
 defaultValue = 1
 [walltime]
 type = Walltime
 title = Walltime
 defaultAmount = 10
 defaultUnit = hours
-size = 200x70
+size = 200x100
+[email]
+type = Email
+size = 400x100
 -
 [jobname]
 type = Jobname
