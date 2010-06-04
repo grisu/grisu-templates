@@ -1,4 +1,6 @@
 commandline = cat ${var-inputfile}
+useScrollbars = true
+
 = Generic =
 -
 [InfoField1]

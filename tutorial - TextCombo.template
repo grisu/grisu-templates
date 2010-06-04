@@ -1,4 +1,6 @@
 commandline = echo ${var-argument}
+useScrollbars = true
+
 = Generic =
 -
 [InfoField1]
