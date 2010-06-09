@@ -4,18 +4,18 @@ force_mpi = true
 = Create an RMPISNOW job = 
 -
 [file]
-type = SingleInputFile
+type = TextFile
 title = R script file
-size = 2000x70
+size = 2000x600
 filter = BasenameFilter
 help = you need to specify an R script file
+mode = r
 - 
 [cpus]
 type = Cpus
 title = CPUs
 size = 100x70
 defaultValue = 1
-
 [walltime]
 type = Walltime
 title = Walltime
