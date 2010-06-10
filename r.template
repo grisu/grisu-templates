@@ -1,4 +1,4 @@
-commandline = R --vanilla --quiet < ${file}
+commandline = R --vanilla --quiet -f ${file}
 application = R
 = Create an R job = 
 -
