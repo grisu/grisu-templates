@@ -1,0 +1,34 @@
+commandline = R --vanilla --quiet < ${file}
+application = R
+= Create an R job = 
+-
+[file]
+type = SingleInputFile
+title = Input file
+size = 2000x70
+filter = BasenameFilter
+help = you need to specify an R input file
+- 
+[cpus]
+type = Cpus
+title = CPUs
+size = 100x70
+defaultValue = 1
+
+[walltime]
+type = Walltime
+title = Walltime
+defaultAmount = 1
+defaultUnit = hours
+#useHistory = false
+size = 200x70
+
+[email]
+type = Email
+size = 400x100
+-
+[jobname]
+type = Jobname
+defaultValue = R_job
+title = Jobname
+size = 2000x70
