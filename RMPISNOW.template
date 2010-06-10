@@ -15,7 +15,8 @@ mode = r
 type = Cpus
 title = CPUs
 size = 100x70
-defaultValue = 1
+defaultValue = 2
+prefills = 2,3,4,5,6,7,8,16,32,64
 [walltime]
 type = Walltime
 title = Walltime
