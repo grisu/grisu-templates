@@ -8,7 +8,7 @@ force_single = true
 [file]
 type = TextFile
 mode = r
-title = Input file
+title = R script file
 size = 2000x1000
 filter = BasenameFilter
 help = you need to specify an R input file
