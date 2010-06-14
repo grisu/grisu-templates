@@ -1,15 +1,15 @@
-commandline = RMPISNOW -f ${file} ${parameters}
+commandline = RMPISNOW -f ${file} --args ${parameters}
 application = RMPISNOW
 force_mpi = true
 
-= RMPISNOW job parameters = 
+= MPI SNOW R job = 
 
 --------------------------------------
 
 [file]
 type = TextFile
 title = R script file
-size = 2000x600
+size = 2000x1000
 filter = BasenameFilter
 help = you need to specify an R script file
 mode = r
@@ -43,20 +43,35 @@ size = 200x70
 type = Jobname
 defaultValue = RMPISNOW_job
 title = Jobname
-size = 2000x70
+size = 2000x100
 
-= Debug =
+= Optional parameters =
 
--------------------------------------------------------------
+-
 
-[InfoField1]
-type = InfoField
-size = 1000x40
-defaultValue =  This is the commandline that will be executed on the resource
+[file2]
+type = MultipleInputFiles
+title = Additional files
+size = 2000x210
 
------------------------------------------------------------
+-
 
-[dummy]
-type = MonitorCommandlinePanel
-size = 1000x50
-title = 
+[email]
+type = Email
+size = 2000x100
+
+#= Debug =
+
+#-------------------------------------------------------------
+
+#[InfoField1]
+#type = InfoField
+#size = 1000x40
+#defaultValue =  This is the commandline that will be executed on the resource
+
+#-----------------------------------------------------------
+
+#[dummy]
+#type = MonitorCommandlinePanel
+#size = 1000x50
+#title = 
