@@ -19,7 +19,7 @@ filter = BasenameFilter
 type = Cpus
 title = CPUs
 size = 100x100
-defaultValue = 1
+defaultValue = 4
 [walltime]
 type = Walltime
 title = Walltime
