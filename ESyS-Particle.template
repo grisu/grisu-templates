@@ -1,11 +1,10 @@
-commandline = Underworld ${file}
-application = Underworld
-applicationVersion = 1.2.0
+commandline = mpipython ${file}
+application = ESyS-Particle
 = Generic = 
 -
 [file]
 type = SingleInputFile
-title = Primary XML Input File
+title = Primary Input File
 size = 2000x70
 filter = BasenameFilter
 -
@@ -19,7 +18,7 @@ filter = BasenameFilter
 type = Cpus
 title = CPUs
 size = 100x100
-defaultValue = 4
+defaultValue = 1
 [walltime]
 type = Walltime
 title = Walltime
@@ -32,6 +31,6 @@ size = 400x100
 -
 [jobname]
 type = Jobname
-defaultValue = underworld
+defaultValue = esys-particle
 title = Jobname
 size = 2000x70

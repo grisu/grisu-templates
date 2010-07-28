@@ -1,14 +1,13 @@
-commandline = RMPISNOW -f ${file}
-application = RMPISNOW
-force_mpi = true
-= Create an RMPISNOW job = 
+commandline = octave ${file}
+application = octave
+= Create an Octave job = 
 -
 [file]
 type = SingleInputFile
-title = R script file
+title = Input file
 size = 2000x70
 filter = BasenameFilter
-help = you need to specify an R script file
+help = you need to specify an Octave input file
 - 
 [cpus]
 type = Cpus
@@ -23,9 +22,13 @@ defaultAmount = 1
 defaultUnit = hours
 #useHistory = false
 size = 200x70
+
+[email]
+type = Email
+size = 400x100
 -
 [jobname]
 type = Jobname
-defaultValue = RMPISNOW_job
+defaultValue = octave_job
 title = Jobname
 size = 2000x70
