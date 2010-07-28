@@ -5,7 +5,7 @@ force_single = true
 hostCount = 1
 memory = 1024
 walltimeInSeconds = 3600
-= Generic =
+= Start =
 - 
 [Heading]
 type = InfoField
@@ -67,5 +67,44 @@ type = SingleInputFile
 size = 2000x70
 title = Input FASTA file
 filter = BasenameFilter
+= About VPAC =
 -
+[vpacInfo1]
+type = InfoField
+title =  
+size = 2000x70
+defaultValue = BLAST runs on resources provided by VPAC - The Victorian Partnership for Advanced Computing - Innovation powered by advanced computing
+-
+[vpacMembers]
+type = InfoField
+title = VPAC Members
+size = 2000x280
+defaultValue = Deakin University, La Trobe University, Monash University, RMIT, Swinburne University of Technology, University of Melbourne, University of Ballarat and Victoria University
+= About eRSA =
+-
+[ersaInfo1]
+type = InfoField
+title =  
+size = 2000x70
+defaultValue = BLAST runs on resources provided by eResearch SA - Advanced Technologies for Changing Research
+-
+[ersaMembers]
+type = InfoField
+title = eRSA Members
+size = 2000x280
+defaultValue = University of Adelaide, Flinders University, and the University of South Australia
+= Registry =
+-
+[registry1]
+type = InfoField
+title =
+size = 2000x70
+defaultValue = Known installations of BLAST in Australia
+-
+[registry2]
+type = InfoField
+title =
+size = 2000x140
+defaultValue = If you wish to list your installation, please send details of the number of CPUs, RAM and Storage, plus some description of what you use BLAST for to rt@arcs.org.au
+
 
