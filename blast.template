@@ -92,7 +92,7 @@ defaultValue = BLAST runs on resources provided by eResearch SA - Advanced Techn
 type = InfoField
 title = eRSA Members
 size = 2000x280
-defaultValue = University of Adelaide, Flinders University, and the University of South Australia
+defaultValue = University of Adelaide, Flinders University, and University of South Australia
 = Registry =
 -
 [registry1]
