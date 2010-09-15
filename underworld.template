@@ -1,6 +1,6 @@
 commandline = Underworld ${file}
 application = Underworld
-applicationVersion = 1.2.0
+applicationVersion = 1.4.1
 = Generic = 
 -
 [file]
