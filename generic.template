@@ -1,38 +1,51 @@
 commandline = ${commandline}
 = Generic = 
 -
-
 [commandline]
-
 type = SimpleCommandline
 title = Commandline
 size = 2000x70
-
 -
-
 [inputFiles]
 type = MultipleInputFiles
 size = 2000x200
 title = Inputfiles
 -
-[cpus]
-type = Cpus
-title = CPUs
-size = 100x70
-defaultValue = 1
-[jobtype]
-type = JobType
-size = 2000x70
-
 [walltime]
 type = Walltime
 title = Walltime
 defaultAmount = 10
 defaultUnit = minutes
-size = 200x70
+size = 200x100
+[cpus]
+type = Cpus
+title = CPUs
+size = 100x100
+defaultValue = 1
+[jobtype]
+type = JobType
+size = 2000x100
+
+[email]
+type = Email
+size = 2000x100
+-
+[appInfo]
+type = ApplicationSelector
+size = 2000x70
+title = Application
+[appVersion]
+type = ApplicationVersionSelector
+size = 2000x70
+title = Version
+[queueSel]
+type = QueueSelector
+title = SubmissionLocation
+size = 2000x70
 -
 [jobname]
 type = Jobname
 defaultValue = templatetest
 title = Jobname
-size = 2000x70
+size = 2000x100
+
