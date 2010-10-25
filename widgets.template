@@ -121,16 +121,16 @@ size = 800x190
 title = Add multiple input files here
 filter = BasenameFilter[separator=,:prefix=--multiInputFiles=:multiPrefix=FILE=:multiPostfix==FILEEND]
 -
-#[QueueSelectorInfo]
-#type = InfoField
-#size = 800x70
-#title = QueueSelector
-#defaultValue = Displays a list of queues that support the job as it is currently set up (job properties & selected VO).
-#-
-#[QueueSelector]
-#type = QueueSelector
-#size = 800x70
-#-
+[QueueSelectorInfo]
+type = InfoField
+size = 800x70
+title = QueueSelector
+defaultValue = Displays a list of queues that support the job as it is currently set up (job properties & selected VO).
+-
+[QueueSelector]
+type = QueueSelector
+size = 800x70
+-
 [SimpleCommandlineInfo]
 type = InfoField
 size = 800x70
