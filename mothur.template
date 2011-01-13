@@ -1,6 +1,5 @@
 commandline = mothur ${file} 
 application = mothur
-applicationVersion = 1.15
 
 = Create a java job = 
 -
@@ -28,8 +27,24 @@ defaultAmount = 1
 defaultUnit = hours
 #useHistory = false
 size = 200x70
+-
+[version]
+#type = ApplicationVersionSelector
+#title = Mothur version
+#size = 200x70
+#defaultValue = 1.15
+type = TextCombo
+title = Mothur version
+size = 200x70
+prefills = 1.15,1.14,1.13
+defaultValue = 1.15
+useHistory = true
+bean = ApplicationVersion
+editable = false
+
 [jobname]
 type = Jobname
 defaultValue = mothur_job
 title = Jobname
 size = 2000x70
+
