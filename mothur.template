@@ -39,7 +39,7 @@ size = 200x70
 prefills = 1.15,1.14,1.13
 defaultValue = 1.15
 useHistory = true
-bean = ApplicationVersion
+property = ApplicationVersion
 editable = false
 
 [jobname]
