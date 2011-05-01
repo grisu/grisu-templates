@@ -1,6 +1,6 @@
 commandline = mothur ${file} 
 application = mothur
-
+submissionLocation = batch:ng2.symphony.waikato.ac.nz
 = Create a java job = 
 -
 [file]
