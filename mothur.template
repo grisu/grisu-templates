@@ -38,7 +38,7 @@ title = Mothur version
 size = 200x70
 prefills = 1.18.1,1.17.3,1.16
 defaultValue = 1.18.1
-useHistory = true
+useHistory = false
 property = ApplicationVersion
 editable = false
 
