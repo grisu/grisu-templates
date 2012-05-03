@@ -13,19 +13,32 @@ help = you need to specify a MrBayes NEXUS file
 [cpus]
 type = Cpus
 title = CPUs
-size = 100x70
+size = 150x70
 defaultValue = 1
 
 [walltime]
 type = Walltime
-title = Walltime
+title = Wall clock time limit
 defaultAmount = 1
 defaultUnit = hours
 #useHistory = false
 size = 200x70
+-
+[ApplicationVersionSelector]
+type = ApplicationVersionSelector
+size = 350x70
+title = Application version
+-
+[QueueSelector]
+title = Queue
+type = QueueSelector
+size = 1000x70
 -
 [jobname]
 type = Jobname
 defaultValue = MrBayes_job
 title = Jobname
 size = 2000x70
+-
+[Email]
+type = Email
