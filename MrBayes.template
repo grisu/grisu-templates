@@ -28,7 +28,7 @@ size = 200x70
 type = ApplicationVersionSelector
 size = 350x70
 title = Application version
--
+
 [QueueSelector]
 title = Queue
 type = QueueSelector
@@ -42,3 +42,4 @@ size = 2000x70
 -
 [Email]
 type = Email
+size = 2000x70
