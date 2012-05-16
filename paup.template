@@ -1,9 +1,9 @@
-commandline = ${executable} ${arguments} -n ${file} 
+commandline = ${executable} ${arguments} -n ${file}
 application = PAUP*
 cpus = 1
 force_single = true
 
-= Create a java job = 
+= Create a PAUP job =
 -
 [executable]
 type = TextCombo
@@ -26,14 +26,13 @@ type = SingleInputFile
 title = File
 size = 2000x70
 filter = BasenameFilter
-help = you need to specify an executable jar file here
+help = you need to specify a PAUP input file here
 
 -
-
-[queue]
-type = QueueSelector
-size = 2000x70
-- 
+[ApplicationVersionSelector]
+type = ApplicationVersionSelector
+size = 350x70
+title = Application version
 
 [walltime]
 type = Walltime
@@ -42,6 +41,12 @@ defaultAmount = 1
 defaultUnit = hours
 #useHistory = false
 size = 200x70
+
+-
+[QueueSelector]
+type = QueueSelector
+size = 2000x70
+-
 
 [jobname]
 type = Jobname
@@ -53,5 +58,5 @@ size = 2000x70
 
 [email]
 type = Email
-size = 2000x100
+size = 2000x120
 

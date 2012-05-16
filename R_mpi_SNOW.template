@@ -4,7 +4,7 @@ force_mpi = true
 
 = MPI SNOW R job = 
 
---------------------------------------
+----------------------------------------
 
 [file]
 type = TextFile
@@ -25,7 +25,7 @@ size = 600x70
 [cpus]
 type = Cpus
 title = CPUs
-size = 100x70
+size = 200x70
 defaultValue = 2
 prefills = 2,3,4,5,6,7,8,16,32,64
 
@@ -37,7 +37,18 @@ defaultUnit = hours
 #useHistory = false
 size = 200x70
 
-------------------------------------------------------------
+-
+[ApplicationVersionSelector]
+type = ApplicationVersionSelector
+size = 350x70
+title = Application version
+
+[QueueSelector]
+title = Queue
+type = QueueSelector
+size = 1000x70
+
+----------------------------------------
 
 [jobname]
 type = Jobname

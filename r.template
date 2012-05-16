@@ -28,6 +28,17 @@ defaultUnit = hours
 size = 200x70
 
 -
+[ApplicationVersionSelector]
+type = ApplicationVersionSelector
+size = 350x70
+title = Application version
+
+[QueueSelector]
+title = Queue
+type = QueueSelector
+size = 1000x70
+
+-
 
 [jobname]
 type = Jobname
