@@ -1,5 +1,8 @@
 commandline = beast ${file}
 application = BEAST
+cpus = 1
+force_single = true
+
 = Create a BEAST job = 
 -
 [file]
@@ -9,11 +12,10 @@ size = 2000x70
 filter = BasenameFilter
 help = you need to specify a BEAST XML input file
 - 
-[cpus]
-type = Cpus
-title = CPUs
-size = 100x70
-defaultValue = 1
+[ApplicationVersionSelector]
+type = ApplicationVersionSelector
+size = 350x70
+title = Application version
 
 [walltime]
 type = Walltime
@@ -22,13 +24,18 @@ defaultAmount = 1
 defaultUnit = hours
 #useHistory = false
 size = 200x70
-
-[email]
-type = Email
-size = 400x100
+-
+[QueueSelector]
+title = Queue
+type = QueueSelector
+size = 1000x70
 -
 [jobname]
 type = Jobname
 defaultValue = beast_job
 title = Jobname
 size = 2000x70
+-
+[email]
+type = Email
+size = 2000x120

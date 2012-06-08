@@ -13,7 +13,7 @@ help = you need to specify a MrBayes NEXUS file
 [cpus]
 type = Cpus
 title = CPUs
-size = 150x70
+size = 200x70
 defaultValue = 1
 
 [walltime]
