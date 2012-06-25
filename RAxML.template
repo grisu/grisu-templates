@@ -1,7 +1,6 @@
 commandline = raxmlHPC-MPI  ${inputfile} ${outputfile} ${substitutionmodel} -N ${cpus} ${weightfile} ${bootstrapseed} ${numcategories} ${startrandomtree} ${likelihoodepsilon} ${excludefile} ${groupingfile} ${algorithm} ${initialrearrangement} ${writetrees} ${optimizebranches} ${similarityclustering} ${fastsimilarityclustering} ${estimatebranchlengths} ${outgroupname} ${parsimonyseed} ${proteinfile} ${multimodelfile} ${constraintfile} ${userstartingtree} ${multipletreesfile} ${numBSsearches} ${rapidbootstrappingseed} ${onlycomputestartingtree} ${arguments}
 application = RAxML
 force_mpi = true
-
 = Create a RAxML job = 
 - 
 [ApplicationVersionSelector]
@@ -29,7 +28,6 @@ size = 200x70
 [Email]
 type = Email
 size = 2000x120
-
 -
 [jobname]
 type = Jobname
@@ -68,10 +66,8 @@ prefills = GTRCAT,GTRMIX,GTRGAMMA,GTRCAT_GAMMA,GTRGAMMAI,GTRMIXIGTRCAT_GAMMAI
 editable = false
 useHistory = true
 filter = SimpleStringFilter[prefix=-m :prefixWhenEmpty=false]
-
-
 -
-[monitor]
+[monitor2]
 type = MonitorCommandlinePanel
 size = 2000x70
 title = Command line to be invoked
@@ -99,7 +95,6 @@ help = This invokes the novel rapid bootstrapping algorithm
 size = 2000x70
 useHistory = true
 filter = SimpleStringFilter[prefix=-x :prefixWhenEmpty=false]
-
 -
 [startrandomtree]
 type = CheckBox
@@ -109,7 +104,12 @@ checkedValue = -d
 uncheckedValue =
 defaultValue =
 size = 2000x70
-
+-
+[monitor]
+type = MonitorCommandlinePanel
+size = 2000x70
+title = Command line to be invoked
+-
 = RAxML additional parameters =
 -
 [numcategories]
@@ -118,14 +118,12 @@ title = Number of categories (-c)
 size = 2000x70
 useHistory = true
 filter = SimpleStringFilter[prefix=-c :prefixWhenEmpty=false]
-
 [likelihoodepsilon]
 type = TextCombo
 title = Likelyhood Epsilon (-e)
 size = 2000x70
 useHistory = true
 filter = SimpleStringFilter[prefix=-e :prefixWhenEmpty=false]
-
 -
 [algorithm]
 type = TextCombo
@@ -135,7 +133,6 @@ prefills = ,a,b,c,d,e,f,g,h,i,j,m,n,o,p,s,t,W,x
 editable = true
 useHistory = true
 filter = SimpleStringFilter[prefix=-f :prefixWhenEmpty=false]
-
 [initialrearrangement]
 type = TextCombo
 title = Initial rearrangement setting (-i)
@@ -160,7 +157,6 @@ checkedValue = -k
 uncheckedValue =
 defaultValue =
 size = 500x70
-
 -
 [similarityclustering]
 type = TextCombo
@@ -168,7 +164,6 @@ title = Similarity clustering threshold (-l)
 size = 2000x70
 useHistory = true
 filter = SimpleStringFilter[prefix=-l :prefixWhenEmpty=false]
-
 -
 [fastsimilarityclustering]
 type = TextCombo
@@ -177,7 +172,6 @@ help = Same functionality as -l above, but uses a less exhaustive and thus faste
 size = 2000x70
 useHistory = true
 filter = SimpleStringFilter[prefix=-L :prefixWhenEmpty=false]
-
 -
 [estimatebranchlengths]
 type = CheckBox
@@ -187,7 +181,6 @@ uncheckedValue =
 defaultValue =
 size = 500x70
 -
-
 [outgroupname]
 type = TextCombo
 title = Name/names of the outgroup taxa (-o)
@@ -195,8 +188,6 @@ help = Comma separated, e.g. Rat,Mouse
 size = 2000x70
 useHistory = true
 filter = SimpleStringFilter[prefix=-o :prefixWhenEmpty=false]
-
-
 -
 # not supporting -T - PTHREADS only
 [numBSsearches]
@@ -205,7 +196,6 @@ title = Number of multiple BS searches per replicate (-u)
 size = 2000x70
 useHistory = true
 filter = SimpleStringFilter[prefix=-u :prefixWhenEmpty=false]
-
 -
 [onlycomputestartingtree]
 type = CheckBox
@@ -214,6 +204,12 @@ checkedValue = -y
 uncheckedValue =
 defaultValue =
 size = 500x70
+-
+-
+[monitor3]
+type = MonitorCommandlinePanel
+size = 2000x70
+title = Command line to be invoked
 -
 = RAxML optional files =
 -
@@ -230,7 +226,6 @@ title = RAxML exclude file (-E)
 size = 2000x70
 filter = BasenameFilter
 filter = SimpleStringFilter[prefix=-E :prefixWhenEmpty=false]
-
 -
 [groupingfile]
 type = SingleInputFile
@@ -247,7 +242,6 @@ size = 2000x70
 filter = BasenameFilter
 filter = SimpleStringFilter[prefix=-P :prefixWhenEmpty=false]
 -
-
 [multimodelfile]
 type = SingleInputFile
 title = Multiple model file (-q)
@@ -270,7 +264,6 @@ help = Specify a user strarting tree (in Newick format)
 size = 2000x70
 filter = BasenameFilter
 filter = SimpleStringFilter[prefix=-r :prefixWhenEmpty=false]
-
 -
 [multipletreesfile]
 type = SingleInputFile
@@ -279,5 +272,9 @@ help = Only effective in combination with the -f b,-f h,-f m,-f n options. This 
 size = 2000x70
 filter = BasenameFilter
 filter = SimpleStringFilter[prefix=-z :prefixWhenEmpty=false]
-
+-
+[monitor4]
+type = MonitorCommandlinePanel
+size = 2000x70
+title = Command line to be invoked
 -
