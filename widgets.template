@@ -1,11 +1,7 @@
 commandline = executable ${CheckBox} ${MultipleInputFiles} --SingleInputFile=${SingleInputFile} --spinnerValue ${Spinner} ${TextCombo} ${TextField} --textFile ${TextFile}
-
 useScrollbars = true
-
 = Widgets = 
-
 -
-
 [ApplicationSelectorInfo]
 type = InfoField
 title = ApplicationSelector
@@ -63,6 +59,10 @@ defaultValue = The email address to notify users when the job is done.
 [Email]
 type = Email
 size = 800x100
+-
+[EnvVar]
+type = EnvironmentVariablePanel
+size = 800x250
 -
 [InfoFieldInfo]
 type = InfoField
