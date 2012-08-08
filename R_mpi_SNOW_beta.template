@@ -16,12 +16,6 @@ mode = r
 
 ----------------------------------------
 
-[parameters]
-type = TextCombo
-title = Additional commandline parameters
-size = 600x70
-
-
 [cpus]
 type = Cpus
 title = CPUs
@@ -29,6 +23,10 @@ size = 200x70
 defaultValue = 2
 prefills = 2,3,4,5,6,7,8,16,32,64
 
+[memory]
+type = Memory
+defaultValue = 2048
+prefills = 1024,2048,4096,8192,16384,32768
 [walltime]
 type = Walltime
 title = Walltime
@@ -66,6 +64,13 @@ title = Additional files
 size = 2000x210
 
 -
+[parameters]
+type = TextCombo
+title = Additional commandline parameters
+size = 2000x70
+
+-
+
 
 [email]
 type = Email
