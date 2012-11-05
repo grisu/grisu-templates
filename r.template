@@ -5,9 +5,10 @@ force_single = true
 = Single cpu R job = 
 -
 [file]
-type = SingleInputFile
+type = TextFile
+mode = r
 title = R script file
-size = 2000x70
+size = 2000x1000
 filter = BasenameFilter
 help = you need to specify an R input file
 - 
@@ -15,28 +16,33 @@ help = you need to specify an R input file
 type = TextCombo
 title = Additional commandline parameters
 size = 2000x70
+[memory]
+type = Memory
+title = Memory per core (in MB)
+defaultValue = 2048
+prefills = 1024,2048,4096,8192,16384,32768
+-
+[QueueSelector]
+title = Queue
+type = QueueSelector
+size = 1000x70
 [walltime]
 type = Walltime
 title = Walltime
 defaultAmount = 1
 defaultUnit = hours
-#useHistory = false
-size = 200x70
--
-[ApplicationVersionSelector]
-type = ApplicationVersionSelector
-size = 350x70
-title = Application version
-[QueueSelector]
-title = Queue
-type = QueueSelector
-size = 1000x70
+
 -
 [jobname]
 type = Jobname
 defaultValue = R_job
 title = Jobname
 size = 2000x100
+[ApplicationVersionSelector]
+type = ApplicationVersionSelector
+size = 350x70
+title = Application version
+
 = Optional parameters =
 -
 [file2]
