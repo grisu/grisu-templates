@@ -20,7 +20,7 @@ size = 2000x70
 type = Memory
 title = Memory per core (in MB)
 defaultValue = 2048
-prefills = 1024,2048,4096,8192,16384,32768
+prefills = 0,1024,2048,4096,8192,16384,32768
 -
 [QueueSelector]
 title = Queue
