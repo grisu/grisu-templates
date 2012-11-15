@@ -15,6 +15,17 @@ help = you need to specify an R script file
 mode = r
 
 ----------------------------------------
+[QueueSelector]
+title = Queue
+type = QueueSelector
+size = 1000x70
+[walltime]
+type = Walltime
+title = Walltime
+defaultAmount = 1
+defaultUnit = hours
+#useHistory = false
+size = 300x70
 
 [cpus]
 type = Cpus
@@ -27,43 +38,9 @@ prefills = 2,3,4,5,6,7,8,16,32,64
 type = Memory
 title = Memory per core (in MB)
 defaultValue = 2048
-prefills = 1024,2048,4096,8192,16384,32768
-[walltime]
-type = Walltime
-title = Walltime
-defaultAmount = 1
-defaultUnit = hours
-#useHistory = false
 size = 200x70
-
--
-[ApplicationVersionSelector]
-type = ApplicationVersionSelector
-size = 350x70
-title = Application version
-
-[QueueSelector]
-title = Queue
-type = QueueSelector
-size = 1000x70
-
-----------------------------------------
-
-[jobname]
-type = Jobname
-defaultValue = RMPISNOW_job
-title = Jobname
-size = 2000x100
-
+prefills = 1024,2048,4096,8192,16384,32768
 = Optional parameters =
-
--
-
-[file2]
-type = MultipleInputFiles
-title = Additional files
-size = 2000x210
-
 -
 [parameters]
 type = TextCombo
@@ -72,6 +49,23 @@ size = 2000x70
 
 -
 
+[jobname]
+type = Jobname
+defaultValue = RMPISNOW_job
+title = Jobname
+size = 2000x70
+
+[ApplicationVersionSelector]
+type = ApplicationVersionSelector
+size = 350x70
+title = Application version
+-
+[file2]
+type = MultipleInputFiles
+title = Additional files
+size = 2000x210
+
+-
 
 [email]
 type = Email
