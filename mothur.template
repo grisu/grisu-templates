@@ -34,18 +34,18 @@ size = 1000x70
 
 -
 [version]
-#type = ApplicationVersionSelector
-#title = Mothur version
-#size = 200x70
-#defaultValue = 1.15
-type = TextCombo
+type = ApplicationVersionSelector
 title = Mothur version
 size = 200x70
-prefills = 1.22,1.21,1.20
-defaultValue = 1.22
-useHistory = false
-property = ApplicationVersion
-editable = false
+defaultValue = 1.6.0
+#type = TextCombo
+#title = Mothur version
+#size = 200x70
+#prefills = 1.22,1.21,1.20
+#defaultValue = 1.22
+#useHistory = false
+#property = ApplicationVersion
+#editable = false
 
 [jobname]
 type = Jobname
