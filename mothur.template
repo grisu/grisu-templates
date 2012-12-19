@@ -19,7 +19,7 @@ help = All the additional files that are necessary for running the mothur job
 [cpus]
 type = Cpus
 title = CPUs
-size = 100x70
+size = 150x70
 [walltime]
 type = Walltime
 title = Walltime
