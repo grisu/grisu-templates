@@ -1,6 +1,6 @@
 commandline = mothur ${file} 
 application = mothur
-submissionLocation = batch:ng2.symphony.waikato.ac.nz
+
 = Create a java job = 
 -
 [file]
@@ -19,7 +19,7 @@ help = All the additional files that are necessary for running the mothur job
 [cpus]
 type = Cpus
 title = CPUs
-size = 200x70
+size = 100x70
 [walltime]
 type = Walltime
 title = Walltime
@@ -27,6 +27,11 @@ defaultAmount = 1
 defaultUnit = hours
 #useHistory = false
 size = 200x70
+[QueueSelector]
+title = Queue
+type = QueueSelector
+size = 1000x70
+
 -
 [version]
 #type = ApplicationVersionSelector
