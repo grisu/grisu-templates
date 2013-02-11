@@ -16,19 +16,21 @@ type = Walltime
 title = Walltime
 defaultAmount = 10
 defaultUnit = minutes
-size = 200x100
+size = 200x70
 [cpus]
 type = Cpus
 title = CPUs
-size = 100x100
+size = 100x70
 defaultValue = 1
 [jobtype]
 type = JobType
-size = 2000x100
-
-[email]
-type = Email
-size = 2000x100
+size = 2000x70
+[memory]
+type = Memory
+title = Memory per core (in MB)
+defaultValue = 2048
+prefills = 0,1024,2048,4096,8192,16384,32768,49152,65536
+size = 350x70
 -
 [appInfo]
 type = ApplicationSelector
@@ -43,9 +45,13 @@ type = QueueSelector
 title = SubmissionLocation
 size = 2000x70
 -
+[email]
+type = Email
+size = 1500x100
 [jobname]
 type = Jobname
 defaultValue = templatetest
 title = Jobname
 size = 2000x100
+
 
