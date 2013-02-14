@@ -28,7 +28,7 @@ defaultUnit = hours
 -
 [jobname]
 type = Jobname
-defaultValue = R_job
+defaultValue = sas_job
 title = Jobname
 size = 2000x70
 [memory]
