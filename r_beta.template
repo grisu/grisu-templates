@@ -18,9 +18,9 @@ title = Additional commandline parameters
 size = 2000x70
 [memory]
 type = Memory
-title = Memory per core (in MB)
-defaultValue = 2048
-prefills = 0,1024,2048,4096,8192,16384,32768
+title = Memory per core (in GB)
+defaultValue = 2
+#prefills = 0,1024,2048,4096,8192,16384,32768
 -
 [QueueSelector]
 title = Queue

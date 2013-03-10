@@ -25,9 +25,9 @@ prefills = 2,3,4,5,6,7,8,16,32,64
 
 [memory]
 type = Memory
-title = Memory per core (in MB)
-defaultValue = 2048
-prefills = 1024,2048,4096,8192,16384,32768
+title = Memory per core (in GB)
+defaultValue = 2
+#prefills = 1024,2048,4096,8192,16384,32768
 [walltime]
 type = Walltime
 title = Walltime

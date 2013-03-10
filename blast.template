@@ -3,7 +3,7 @@ application = blast
 applicationVersion = 2.2.21
 force_single = true
 hostCount = 1
-memory = 1024
+memory = 1024m
 walltimeInSeconds = 3600
 = Start =
 - 
