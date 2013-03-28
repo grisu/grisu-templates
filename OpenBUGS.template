@@ -1,4 +1,4 @@
-commandline = /share/apps/OpenBUGS-3.2.2/bin/OpenBUGS -f ${file}
+commandline = OpenBUGS -f ${file}
 application = OpenBUGS
 cpus = 1
 force_single = true
