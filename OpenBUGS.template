@@ -1,0 +1,35 @@
+commandline = /share/apps/OpenBUGS-3.2.2/bin/OpenBUGS -f ${file}
+application = OpenBUGS
+cpus = 1
+force_single = true
+submissionLocation = pan:pan.nesi.org.nz
+
+= OpenBUGS job = 
+-
+[file]
+type = TextFile
+mode = text
+title = OpenBUGS script file
+size = 2000x1000
+filter = BasenameFilter
+help = you need to specify an OpenBUGS script file
+- 
+[jobname]
+type = Jobname
+defaultValue = R_job
+title = Jobname
+size = 2000x70
+[memory]
+type = Memory
+title = Memory per core (in GB)
+defaultValue = 2
+#prefills = 0,1024,2048,4096,8192,16384,32768
+size = 200x70
+[ApplicationVersionSelector]
+type = ApplicationVersionSelector
+size = 200x70
+title = OpenBUGS version
+-
+[email]
+type = Email
+size = 2000x100
