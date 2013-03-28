@@ -16,7 +16,7 @@ help = you need to specify an OpenBUGS script file
 - 
 [jobname]
 type = Jobname
-defaultValue = R_job
+defaultValue = OpenBUGS_job
 title = Jobname
 size = 2000x70
 [memory]
