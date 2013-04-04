@@ -1,4 +1,4 @@
-commandline = OpenBUGS -f ${file}
+commandline = OpenBUGS ${file}
 application = OpenBUGS
 cpus = 1
 force_single = true
@@ -20,6 +20,15 @@ size = 2000x200
 title = Inputfiles
 = Job properties =
 - 
+[queueSel]
+type = QueueSelector
+title = SubmissionLocation
+size = 2000x70
+[ApplicationVersionSelector]
+type = ApplicationVersionSelector
+size = 200x70
+title = OpenBUGS version
+-
 [jobname]
 type = Jobname
 defaultValue = OpenBUGS_job
@@ -31,10 +40,6 @@ title = Memory per core (in GB)
 defaultValue = 2
 #prefills = 0,1024,2048,4096,8192,16384,32768
 size = 200x70
-[ApplicationVersionSelector]
-type = ApplicationVersionSelector
-size = 200x70
-title = OpenBUGS version
 -
 [email]
 type = Email
