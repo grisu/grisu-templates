@@ -3,16 +3,22 @@ application = OpenBUGS
 cpus = 1
 force_single = true
 submissionLocation = pan:pan.nesi.org.nz
-
-= OpenBUGS job = 
+= OpenBUGS input files = 
 -
 [file]
 type = TextFile
 mode = text
 title = OpenBUGS script file
-size = 2000x1000
+size = 2000x500
 filter = BasenameFilter
 help = you need to specify an OpenBUGS script file
+-
+[inputFiles]
+title = Other inputfiles
+type = MultipleInputFiles
+size = 2000x200
+title = Inputfiles
+= Job properties =
 - 
 [jobname]
 type = Jobname
