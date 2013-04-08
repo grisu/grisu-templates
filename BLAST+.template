@@ -8,7 +8,7 @@ applicationVersion = 2.2.27
 type = TextCombo
 title = Blast Command
 size = 200x70
-prefills = blastn, blastp, blastx, tblastn, tblastx, mpiBLAST
+prefills = blastn,blastp,blastx,tblastn,tblastx,mpiBLAST
 editable = false
 
 [db]
