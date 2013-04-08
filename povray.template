@@ -12,6 +12,7 @@ type = SingleInputFile
 size = 550x80
 title = Input File
 filter = BasenameFilter
+setJobname = true
 
 -
 [width]

@@ -42,6 +42,7 @@ size = 2000x70
 filter = BasenameFilter
 filter = SimpleStringFilter[prefix=-s :prefixWhenEmpty=false]
 help = you need to specify a RAxML sequence file
+setJobname = true
 -
 [outputfile]
 type = TextCombo

@@ -15,6 +15,7 @@ useHistory = false
 property = inputFileUrl
 size = 2000x70
 filter = BasenameFilter
+setJobname = true
 -------
 [walltime]
 type = Walltime

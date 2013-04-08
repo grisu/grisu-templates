@@ -11,6 +11,7 @@ title = R script file
 size = 2000x1000
 filter = BasenameFilter
 help = you need to specify an R input file
+setJobname = true
 - 
 -
 [QueueSelector]

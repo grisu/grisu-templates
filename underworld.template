@@ -8,6 +8,7 @@ type = SingleInputFile
 title = Primary XML Input File
 size = 2000x70
 filter = BasenameFilter
+setJobname = true
 -
 [file2]
 type = MultipleInputFiles

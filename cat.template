@@ -16,7 +16,7 @@ type = SingleInputFile
 title = File
 size = 2000x70
 filter = BasenameFilter
-
+setJobname = true
 -------
 
 [walltime]

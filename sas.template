@@ -12,6 +12,7 @@ title = SAS input file
 size = 2000x1000
 filter = BasenameFilter
 help = you need to specify the SAS input file
+setJobname = true
 - 
 -
 [QueueSelector]

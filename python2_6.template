@@ -12,6 +12,7 @@ title = python script file
 size = 2000x1000
 filter = BasenameFilter
 help = you need to specify an python input file
+setJobname = true
 - 
 [parameters]
 type = TextCombo

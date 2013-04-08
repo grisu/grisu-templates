@@ -13,6 +13,7 @@ size = 2000x1000
 filter = BasenameFilter
 help = you need to specify an R script file
 mode = r
+setJobname = true
 
 ----------------------------------------
 [QueueSelector]

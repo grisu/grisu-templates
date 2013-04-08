@@ -8,6 +8,7 @@ title = Input file
 size = 2000x70
 filter = BasenameFilter
 help = you need to specify an Octave input file
+setJobname = true
 - 
 [cpus]
 type = Cpus

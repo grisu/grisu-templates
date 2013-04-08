@@ -12,7 +12,7 @@ title = File
 size = 2000x70
 filter = BasenameFilter
 help = you need to specify an executable jar file here
-
+setJobname = true
 - 
 
 [arguments]

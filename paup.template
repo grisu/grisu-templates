@@ -27,6 +27,7 @@ title = File
 size = 2000x70
 filter = BasenameFilter
 help = you need to specify a PAUP input file here
+setJobname = true
 
 -
 [ApplicationVersionSelector]

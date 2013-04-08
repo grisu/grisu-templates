@@ -9,6 +9,7 @@ type = SingleInputFile
 title = Nomad input file
 size = 2000x70
 filter = BasenameFilter
+setJobname = true
 - 
 #[cpus]
 #type = Cpus

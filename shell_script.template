@@ -12,6 +12,7 @@ title = shell script
 size = 2000x1000
 filter = BasenameFilter
 help = the shell script to run
+setJobname = true
 -
 [file2]
 type = MultipleInputFiles

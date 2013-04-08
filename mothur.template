@@ -9,6 +9,7 @@ title = Batch file
 size = 2000x70
 filter = BasenameFilter
 help = please select the mothur .batch file here
+setJobname = true
 - 
 [other files]
 type = MultipleInputFiles

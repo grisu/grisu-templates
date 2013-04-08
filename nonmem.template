@@ -9,6 +9,7 @@ type = SingleInputFile
 title = Control stream
 size = 2000x70
 filter = BasenameFilter
+setJobname = true
 -
 [file]
 type = SingleInputFile

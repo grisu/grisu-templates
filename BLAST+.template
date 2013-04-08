@@ -26,6 +26,7 @@ title = Query File
 size = 2000x70
 filter = BasenameFilter
 filter = SimpleStringFilter[prefix=-query :prefixWhenEmpty=false]
+setJobname = true
 -
 [task]
 type = TextCombo

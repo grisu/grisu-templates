@@ -12,6 +12,7 @@ title = OpenBUGS script file
 size = 2000x500
 filter = BasenameFilter
 help = you need to specify an OpenBUGS script file
+setJobname = true
 -
 [inputFiles]
 title = Other inputfiles

@@ -9,6 +9,7 @@ title = MrBayes NEXUS file
 size = 2000x70
 filter = BasenameFilter
 help = you need to specify a MrBayes NEXUS file
+setJobname = true
 - 
 [cpus]
 type = Cpus
