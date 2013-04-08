@@ -31,7 +31,7 @@ filter = SimpleStringFilter[prefix=-query :prefixWhenEmpty=false]
 type = TextCombo
 title = Task
 size = 200x70
-prefills = blastn, blastn-short, blastp, blastp-short, megablast, dc-megablast
+prefills = blastn,blastn-short,blastp,blastp-short,megablast,dc-megablast
 editable = false
 
 [dust]
