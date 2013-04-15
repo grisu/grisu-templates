@@ -5,6 +5,7 @@ commandline = ${commandline}
 type = SimpleCommandline
 title = Commandline
 size = 2000x70
+setJobname = true
 -
 [inputFiles]
 type = MultipleInputFiles
@@ -53,5 +54,3 @@ type = Jobname
 defaultValue = templatetest
 title = Jobname
 size = 2000x100
-
-
