@@ -1,10 +1,7 @@
 commandline = g09
-stdin = input
-stdout = output
 application = Gaussian
 applicationVersion = C.01
 hostCount = 1
-
 = Generic = 
 -
 [file1]
@@ -26,6 +23,12 @@ defaultValue = output.log
 fillWithDefaultValue = true
 property = stdout
 -
+[walltime]
+type = Walltime
+title = Walltime
+defaultAmount = 10
+defaultUnit = minutes
+size = 200x70
 [jobname]
 type = Jobname
 defaultValue = gaussian_job
