@@ -3,7 +3,7 @@ stdin = input
 stdout = output
 application = Gaussian
 applicationVersion = C.01
-
+hostCount = 1
 
 = Generic = 
 -
@@ -23,6 +23,8 @@ type = TextCombo
 title = Output filename
 size = 1000x70
 defaultValue = output.log
+fillWithDefaultValue = true
+property = stdout
 -
 [jobname]
 type = Jobname
