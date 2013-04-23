@@ -39,7 +39,6 @@ size = 300x70
 title = Walltime
 defaultAmount = 1
 defaultUnit = hours
--
 [email]
 type = Email
 size = 2000x100
