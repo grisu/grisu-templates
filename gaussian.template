@@ -1,0 +1,31 @@
+commandline = g09
+stdin = input
+stdout = output
+application = Gaussian
+applicationVersion = C.01
+
+
+= Generic = 
+-
+[file1]
+type = InputFileParser
+size = 2000x70
+title = Gaussian input file
+setJobname = true
+setAsStdin = true
+-
+[queueSel]
+type = QueueSelector
+title = SubmissionLocation
+size = 800x70
+[outfile]
+type = TextCombo
+title = Output filename
+size = 1000x70
+defaultValue = output.log
+-
+[jobname]
+type = Jobname
+defaultValue = gaussian_job
+title = Jobname
+size = 2000x70
