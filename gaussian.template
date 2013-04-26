@@ -34,3 +34,7 @@ type = Jobname
 defaultValue = gaussian_job
 title = Jobname
 size = 2000x70
+-
+[email]
+type = Email
+size = 1500x100
