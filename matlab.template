@@ -7,7 +7,7 @@ hostCount = 1
 type = SingleInputFile
 title = matlab script file
 size = 2000x70
-filter = BasenameFilter
+filter = BasenameFilter[noExtension=true]
 help = you need to specify a matlab input file
 setJobname = true
 -
