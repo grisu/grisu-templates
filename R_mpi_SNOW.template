@@ -60,6 +60,7 @@ size = 2000x70
 type = ApplicationVersionSelector
 size = 350x70
 title = Application version
+useHistory = true
 -
 [file2]
 type = MultipleInputFiles
