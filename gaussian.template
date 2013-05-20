@@ -1,6 +1,6 @@
 commandline = g09
 application = Gaussian
-applicationVersion = C.01
+applicationVersion = D.01
 hostCount = 1
 = Generic = 
 -
